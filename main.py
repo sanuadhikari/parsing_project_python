@@ -1,3 +1,4 @@
+import requests
 from json_parser import josn_parser
 from xml_parser import xml_parser
 
@@ -13,6 +14,8 @@ if __name__ == '__main__':
                 </person>
               </root>'''
 
+    response = requests.get("https://earthquake.usgs.gov/fdsnws/event/1/application.json")
+    print("status code = ", response.status_code)
     json_string = '{"name": "Alice", "age": 30, "city": "New York"}'
 
     xml_parser(xml)
