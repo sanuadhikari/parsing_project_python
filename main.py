@@ -1,5 +1,5 @@
-from parsing_project_python.json_parser import josn_parser
-from parsing_project_python.xml_parser import xml_parser
+from json_parser import josn_parser
+from xml_parser import xml_parser
 
 if __name__ == '__main__':
     xml = '''<root>
